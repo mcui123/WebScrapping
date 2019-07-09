@@ -237,25 +237,3 @@ ggsave("health expenditure_percentage_3.png")
 cormat <- cor_data_all
 melted_cormat <- melt(cor_data_all) %>% na.omit()
 
-
-# Correlation heatmap 
-
-ggplot(melted_cormat, aes(variable, contient)) + 
-  geom_tile(aes(fill = value), colour = "#50b6bb") + 
-  scale_fill_gradient(low = "#45969b",  high = "#f96d15")+
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))+
-  geom_text(aes(variable, contient, label = value), color = "black", size = 4) +
-  theme(
-    axis.title.x = element_blank(),
-    axis.title.y = element_blank(),
-    panel.grid.major = element_blank(),
-    panel.border = element_blank(),
-    panel.background = element_blank(),
-    axis.ticks = element_blank())+
-  # legend.justification = c(1, 0),
-  # legend.position = c(0.6, 0.7),
-  # legend.direction = "horizontal")+
-  guides(fill = F,
-         legend = F,
-         color = F)
-
