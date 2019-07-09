@@ -1,2 +1,11 @@
 # WebScrapping
-WORLD HEALTH, EDUCATION AND ECONOMY DATA VISUALIZATION 
+World Health, Education and Economy Data Visualization: A Web Scrapping Project
+
+
+Included are: 
+1) Python code (ipynb) for scrapping data off CIA World Factbook 
+2) R code that houses majority of codes for plotting 
+3) Seperate R code that houses codes for correlation studies 
+4) A Power Point Slide Deck for presentation 
+
+
